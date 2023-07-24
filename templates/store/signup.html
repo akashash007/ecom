@@ -1,0 +1,10 @@
+{% extends 'store/main.html' %}
+
+{% block content %}
+<form method="POST">
+    <h1 style="text-align: center;">SIGNUP PAGE</h1>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Signup">
+</form>
+{% endblock %}
